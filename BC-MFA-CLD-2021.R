@@ -7,10 +7,9 @@
 ########################### SCRIPT ################################
 
 # In house R functions
-# source the following function : https://github.com/Hubas-prog/BC-MFA/blob/main/BC-MFA_custom_function.R
 
+# Please source the following function first : https://github.com/Hubas-prog/BC-MFA/blob/main/BC-MFA_custom_function.R
 source("https://github.com/Hubas-prog/BC-MFA/blob/main/BC-MFA_custom_function.R")
-#source("/Users/cedric.hubas/BC-MFA/BC-MFA_custom_function.R")
 
 # Packages
 library(ggplot2)
