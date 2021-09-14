@@ -123,10 +123,21 @@ give.cor<-function(cor.data,alpha.error) {
 cor.data.pig<-data.frame(all.data[all.data$site=="AV",c(2:24)],
            CLD=pol.data.all$CLD[all.data$site=="AV"])
 
-cor.data.mono<-data.frame(all.data[all.data$site=="AV",c(25:33)],
+cor.data.mono<-data.frame(log(all.data[all.data$site=="AV",c(25:33)]),
                          CLD=pol.data.all$CLD[all.data$site=="AV"])
 
 cor.data.fatty<-data.frame(all.data[all.data$site=="AV",c(34:73)],
+                         SAT=all.data[all.data$site=="AV",]$`12.0`+
+                           all.data[all.data$site=="AV",]$`13.0`+
+                           all.data[all.data$site=="AV",]$`14.0`+
+                           all.data[all.data$site=="AV",]$`15.0`+
+                           all.data[all.data$site=="AV",]$`16.0`+
+                           all.data[all.data$site=="AV",]$`17.0`+
+                           all.data[all.data$site=="AV",]$`18.0`+
+                           all.data[all.data$site=="AV",]$`19.0`+
+                           all.data[all.data$site=="AV",]$`20.0`+
+                           all.data[all.data$site=="AV",]$`22.0`+
+                           all.data[all.data$site=="AV",]$`24.0`,
                          CLD=pol.data.all$CLD[all.data$site=="AV"])
 
 give.cor(cor.data.pig,0.95)
