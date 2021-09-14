@@ -16,6 +16,7 @@ source("https://github.com/Hubas-prog/BC-MFA/blob/main/BC-MFA_custom_function.R"
 library(ggplot2)
 library(scales)
 library(corrplot)
+library(cowplot)
 
 # aesthetics
 my.palette <- colorRampPalette(c("red3","orange","yellow","green3","royalblue"))
